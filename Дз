@@ -1,0 +1,37 @@
+//Миньков 22исп 2-1 15 вариант 1.2 высокий уровень 
+Console.WriteLine("Введите число x1: ");
+double x1 = double.Parse(Console.ReadLine());
+Console.WriteLine("Введите число y1: ");
+double y1 = double.Parse(Console.ReadLine());
+
+Console.WriteLine("Введите число x2: ");
+double x2 = double.Parse(Console.ReadLine());
+Console.WriteLine("Введите число y2: ");
+double y2 = double.Parse(Console.ReadLine());
+
+Console.WriteLine("Введите число x3: ");
+double x3 = double.Parse(Console.ReadLine());
+Console.WriteLine("Введите число y3: ");
+double y3 = double.Parse(Console.ReadLine());
+
+Console.WriteLine("Введите число x4: ");
+double x4 = double.Parse(Console.ReadLine());
+Console.WriteLine("Введите число y4: ");
+double y4 = double.Parse(Console.ReadLine());
+double A = 0;
+double B = 0;
+double C = 0;
+double D = 0;
+double P = 0;
+
+A = Math.Sqrt(Math.Pow((x1 - x2), 2) + Math.Pow((y1 - y2), 2));
+
+B = Math.Sqrt(Math.Pow((x2 - x3), 2) + Math.Pow((y2 - y3), 2));
+
+C = Math.Sqrt(Math.Pow((x3 - x4),2) + Math.Pow((y3 - y4),2));
+
+D = Math.Sqrt(Math.Pow((x4 - x1), 2) + Math.Pow((y4 - y1), 2));
+
+P = A + B + C + D;
+
+Console.WriteLine("Периметр равен: "+P);
